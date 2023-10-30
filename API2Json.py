@@ -23,7 +23,7 @@ st.text(df)
 
 dir_path = os.path.dirname(__file__) # 作業フォルダの取得
 gc = gspread.oauth(
-                   credentials_filename=os.path.join(dir_path, "client_secret_1011947998521-u1oqvpcfifmbk68red1h2pu6njcjrvro.apps.googleusercontent.com.json"), # 認証用のJSONファイル
+                   credentials_filename=os.path.join(dir_path, "client_secret_1011947998521-51un23r1d4b42ihjk4kegs999v846f4b.apps.googleusercontent.com.json"), # 認証用のJSONファイル
                    authorized_user_filename=os.path.join(dir_path, "C:/Users/I-zy/PycharmProjects/Gsheets/authorized_user.json"), # 証明書の出力ファイル
                    )
 
