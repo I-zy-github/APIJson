@@ -21,11 +21,11 @@ r = requests.get(loc, headers=header)
 df = pd.read_json(loc)
 st.text(df)
 
-dir_path = os.path.dirname(__file__) # 作業フォルダの取得
-gc = gspread.oauth(
-                   credentials_filename=os.path.join(dir_path, "client_secret_1011947998521-u1oqvpcfifmbk68red1h2pu6njcjrvro.apps.googleusercontent.com.json"), # 認証用のJSONファイル
-                   authorized_user_filename=os.path.join(dir_path, "C:/Users/I-zy/PycharmProjects/Gsheets/authorized_user.json"), # 証明書の出力ファイル
-                   )
+#dir_path = os.path.dirname(__file__) # 作業フォルダの取得
+#gc = gspread.oauth(
+#                   credentials_filename=os.path.join(dir_path, "client_secret_1011947998521-u1oqvpcfifmbk68red1h2pu6njcjrvro.apps.googleusercontent.com.json"), # 認証用のJSONファイル
+#                   authorized_user_filename=os.path.join(dir_path, "C:/Users/I-zy/PycharmProjects/Gsheets/authorized_user.json"), # 証明書の出力ファイル
+#                   )
 
 # スプレッドシートに書き込み
 #wb = gc.open_by_key("1g3ismZRFUplNkm6yoEvX6yY37_4JqsErHJkz_eG5W_o") # test02のファイルを開く(キーから)
