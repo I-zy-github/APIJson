@@ -29,9 +29,9 @@ gc = gspread.oauth(
 
 # スプレッドシートに書き込み
 wb = gc.open_by_key(GSkey) # test02のファイルを開く(キーから)
-ws = wb.get_worksheet(0) # 最初のシートを開く(idは0始まりの整数)
+#ws = wb.get_worksheet(0) # 最初のシートを開く(idは0始まりの整数)
 
 data = df
-set_with_dataframe(ws,data.reset_index())
+#set_with_dataframe(ws,data.reset_index())
 # 複数行一括書き込み
 # wb.values_append("シート1", {"valueInputOption": "USER_ENTERED"}, {"values": data})
